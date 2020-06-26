@@ -1,0 +1,16 @@
+/* 
+  Assets.strings
+  Proteja Brasil
+
+  Created by Daniel Borges on 10/03/16.
+  Copyright © 2016 IlhaSoft. All rights reserved.
+*/
+
+// Finish report
+"img_report_registred" = "imgDenounceRegistred_en";
+
+// Menu
+"img_logo_menu" = "logoMenu_en";
+
+// Thanks for feedback
+"img_thanks_feedback" = "imgThanksFeedback_en";

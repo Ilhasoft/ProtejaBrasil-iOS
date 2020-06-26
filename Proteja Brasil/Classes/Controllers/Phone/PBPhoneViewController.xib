@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PBDisk100ViewController" customModule="Proteja_Brasil" customModuleProvider="target">
+            <connections>
+                <outlet property="btCall" destination="TDF-Tj-A5a" id="nb1-7r-OoH"/>
+                <outlet property="btCancel" destination="mVs-ZO-lRu" id="ZCf-gb-pmI"/>
+                <outlet property="imgDisk" destination="Rvp-hf-UVK" id="QSz-VQ-CuN"/>
+                <outlet property="lbMessage" destination="D3T-Ee-jyt" id="QDH-kO-KoQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <userGuides>
+                <userLayoutGuide location="121" affinity="minX"/>
+                <userLayoutGuide location="122" affinity="minY"/>
+            </userGuides>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-Tj-A5a">
+                    <rect key="frame" x="0.0" y="125" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="mOA-4v-rbZ"/>
+                        <constraint firstAttribute="height" constant="50" id="sLZ-N5-QJw"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Ligar" image="imgCall">
+                        <color key="titleColor" red="0.19215686269999999" green="0.83137254900000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="call" destination="-1" eventType="touchUpInside" id="xBP-uX-r2g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVs-ZO-lRu">
+                    <rect key="frame" x="120" y="125" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="6s2-QU-en2"/>
+                        <constraint firstAttribute="height" constant="50" id="bKa-tA-OkY"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Cancelar" image="imgExit">
+                        <color key="titleColor" red="0.71764705880000002" green="0.14901960780000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel" destination="-1" eventType="touchUpInside" id="ykM-sc-bPM"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgDisque" translatesAutoresizingMaskIntoConstraints="NO" id="Rvp-hf-UVK">
+                    <rect key="frame" x="90" y="11" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Rvp-hf-UVK" secondAttribute="height" multiplier="1:1" id="aE7-eJ-aDf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você deseja ligar para o DISQUE 100?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-Ee-jyt">
+                    <rect key="frame" x="26" y="79" width="188" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="GdF-4X-NMN"/>
+                        <constraint firstAttribute="height" constant="43" id="oUo-AB-dC6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mVs-ZO-lRu" firstAttribute="top" secondItem="D3T-Ee-jyt" secondAttribute="bottom" constant="3" id="GmW-5h-GnO"/>
+                <constraint firstItem="mVs-ZO-lRu" firstAttribute="leading" secondItem="TDF-Tj-A5a" secondAttribute="trailing" id="Scq-L4-0eH"/>
+                <constraint firstAttribute="bottom" secondItem="mVs-ZO-lRu" secondAttribute="bottom" constant="5" id="T79-Qr-utF"/>
+                <constraint firstAttribute="trailing" secondItem="mVs-ZO-lRu" secondAttribute="trailing" id="cwy-us-Bwn"/>
+                <constraint firstItem="Rvp-hf-UVK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fVx-FQ-GvN"/>
+                <constraint firstAttribute="bottom" secondItem="TDF-Tj-A5a" secondAttribute="bottom" constant="5" id="qNw-kv-zsa"/>
+                <constraint firstItem="D3T-Ee-jyt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t2h-BH-qOR"/>
+                <constraint firstItem="Rvp-hf-UVK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="11" id="tt6-Vy-ZkQ"/>
+                <constraint firstItem="TDF-Tj-A5a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wrH-WR-ym8"/>
+                <constraint firstItem="D3T-Ee-jyt" firstAttribute="top" secondItem="Rvp-hf-UVK" secondAttribute="bottom" constant="8" id="x1W-ty-n7x"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Gfp-sU-yit"/>
+            <point key="canvasLocation" x="410" y="367"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgCall" width="15" height="15"/>
+        <image name="imgDisque" width="45" height="38"/>
+        <image name="imgExit" width="14" height="14"/>
+    </resources>
+</document>

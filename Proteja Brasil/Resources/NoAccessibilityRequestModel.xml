@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:cadastrarDenunciaAcessibilidadewsdl">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:cadastrarDenunciaAcessibilidade soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+            <denuncia>
+                <nome_vitima>%@</nome_vitima>
+                <uf_vitima>%@</uf_vitima>
+                <cidade_vitima>%@</cidade_vitima>
+                <endereco_vitima>%@</endereco_vitima>
+                <id_faixa_etaria>%@</id_faixa_etaria>
+                <id_cor_raca>%d</id_cor_raca>
+                <id_sexo>%d</id_sexo>
+                <id_orientacao_sexual>%d</id_orientacao_sexual>
+                <id_local>%d</id_local>
+                <nome_suspeito>%@</nome_suspeito>
+                <endereco_suspeito>%@</endereco_suspeito>
+                <uf_suspeito>%@</uf_suspeito>
+                <cidade_suspeito>%@</cidade_suspeito>
+                <id_tipo_violacao>%d</id_tipo_violacao>
+                <id_violacao>%@</id_violacao>
+                <outra_violacao>%@</outra_violacao>
+                <orgao_acionado>%@</orgao_acionado>
+                <descricao_denuncia>%@</descricao_denuncia>
+            </denuncia>
+        </urn:cadastrarDenunciaAcessibilidade>
+    </soapenv:Body>
+</soapenv:Envelope>

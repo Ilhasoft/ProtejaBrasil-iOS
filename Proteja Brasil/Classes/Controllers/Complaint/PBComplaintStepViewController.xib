@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PBComplaintStepViewController" customModule="Proteja_Brasil" customModuleProvider="target">
+            <connections>
+                <outlet property="btNext" destination="Sa7-Sq-Hzo" id="K6U-hH-uuh"/>
+                <outlet property="constraintObligatoryFieldHeight" destination="PbF-yI-Ayd" id="MSz-do-Smr"/>
+                <outlet property="constraintObligatoryFieldTop" destination="fE8-Vq-YrG" id="Rnp-3f-xc6"/>
+                <outlet property="lbObligatory" destination="nml-Mq-keG" id="dmd-pK-9xe"/>
+                <outlet property="scrollView" destination="bvd-qI-wjW" id="KBn-Wd-leJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContent" destination="OFR-Zv-EL1" id="Unh-vq-FCZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-Sq-Hzo">
+                    <rect key="frame" x="20" y="708" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.30196078431372547" green="0.80784313725490198" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Wc6-VW-n1M"/>
+                    </constraints>
+                    <state key="normal" title="Próximo">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextStep" destination="-1" eventType="touchUpInside" id="5Lm-JB-Evy"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvd-qI-wjW" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-Zv-EL1" userLabel="View Content">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <edgeInsets key="layoutMargins" top="84" left="20" bottom="0.0" right="20"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="OFR-Zv-EL1" firstAttribute="top" secondItem="bvd-qI-wjW" secondAttribute="top" id="3Hb-yD-DcI"/>
+                        <constraint firstItem="OFR-Zv-EL1" firstAttribute="width" secondItem="bvd-qI-wjW" secondAttribute="width" id="Glo-O4-w9S"/>
+                        <constraint firstItem="OFR-Zv-EL1" firstAttribute="height" secondItem="bvd-qI-wjW" secondAttribute="height" priority="250" id="Mss-tL-Jwa"/>
+                        <constraint firstAttribute="trailing" secondItem="OFR-Zv-EL1" secondAttribute="trailing" id="Mvy-bS-uCR"/>
+                        <constraint firstItem="OFR-Zv-EL1" firstAttribute="leading" secondItem="bvd-qI-wjW" secondAttribute="leading" id="jUj-iE-Qyk"/>
+                        <constraint firstAttribute="bottom" secondItem="OFR-Zv-EL1" secondAttribute="bottom" id="uHD-A5-m1d"/>
+                    </constraints>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*campo obrigatório" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nml-Mq-keG">
+                    <rect key="frame" x="77.666666666666686" y="676" width="220" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="0cO-gf-Jth"/>
+                        <constraint firstAttribute="height" constant="20" id="PbF-yI-Ayd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.28627450980392155" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OMC-Kd-3eG" firstAttribute="bottom" secondItem="Sa7-Sq-Hzo" secondAttribute="bottom" constant="20" id="0WJ-kv-gcv"/>
+                <constraint firstItem="Sa7-Sq-Hzo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8RK-tr-04Q"/>
+                <constraint firstItem="bvd-qI-wjW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8UK-ex-2D8"/>
+                <constraint firstItem="bvd-qI-wjW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SnP-tJ-Urs"/>
+                <constraint firstItem="nml-Mq-keG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WyE-Li-AX6"/>
+                <constraint firstAttribute="trailing" secondItem="Sa7-Sq-Hzo" secondAttribute="trailing" constant="20" id="c3r-01-SVO"/>
+                <constraint firstItem="nml-Mq-keG" firstAttribute="top" secondItem="bvd-qI-wjW" secondAttribute="bottom" constant="8" id="fE8-Vq-YrG"/>
+                <constraint firstItem="Sa7-Sq-Hzo" firstAttribute="top" secondItem="nml-Mq-keG" secondAttribute="bottom" constant="12" id="txE-WU-NnB"/>
+                <constraint firstAttribute="trailing" secondItem="bvd-qI-wjW" secondAttribute="trailing" id="uif-1j-iES"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="OMC-Kd-3eG"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,197 @@
+"app_name" = "Proteja Brasil";
+"action_map" = "Mapa";
+"action_reports" = "Mis denuncias";
+"action_violation_types" = "Tipos de violación";
+"action_opinion" = "Opine";
+"action_about" = "Acerca";
+"label_close_menu" = "Cerrar Menu";
+"label_open_menu" = "Abrir Menu";
+"menu_report" = "Denuncie";
+
+/* Common ones */
+"ok" = "Ok";
+
+/* Errors */
+"error" = "Error";
+"error_unexpected" = "Se ha producido un error inesperado. Por favor, inténtelo de nuevo.";
+"error_from_server" = "Se ha producido un error al cargar los datos desde el servidor. Por favor, inténtelo de nuevo.";
+"error_invalid_url" = "Se ha producido un error de ahorro. Asegúrese de que la dirección del sitio web es correcta (por ej. Http://www.google.com.br).";
+
+/* Alerts */
+"alert_fill_all_fields" = "Por favor, complete todos los campos";
+"alert_allow_location" = "Permitir que la aplicación acceda a tu ubicación en la configuración del dispositivo.";
+"alert_disk_100" = "Al que desea llamar Disque 100?";
+"alert_disk_180" = "Ligue 180!";
+
+/* Hints */
+"hint_search_networks" = "Buscar redes de protección";
+
+"hint_search_places" = "Buscar local";
+"hint_accessibility_barrier" = "Describa";
+
+/* Floating button texts */
+"label_report_call" = "Denuncie por el Disque 100";
+"label_report_call_180" = "Denuncie por el Ligue 180";
+"label_accessibility" = "Local sin accesibilidad";
+"label_internet_crim" = "Violación en la internet";
+"label_report" = "Violación fuera de la Internet";
+
+/* Activity titles */
+"title_activity_maps" = "Mapa";
+
+"title_activity_accessibility_report" = "Local sin accesibilidad";
+
+/* Report questions */
+"title_question_victim_info" = "Name of the victim:*";
+
+"title_question_victim_location_description" = "Where can the victim be found?*";
+"title_question_offender_info" = "Who is the offender?*";
+"title_question_place_violation" = "Where did the violation happen?*";
+"title_question_violation_time" = "For how long does this happen?*";
+"title_question_barriers" = "¿Cuales son las barreras que usted encuentra en ese local?*";
+"title_question_violation_type" = "¿Cual tipo de violación ocurrió?*";
+"title_question_violation_description" = "¿Como la violencia es practicada?*";
+"title_question_institution_activated" = "¿Algun órgano fué accionado?*";
+"title_question_victim_location" = "¡Casi allí! ¿Cual es la dirección de la víctima?*";
+"title_question_offender_location" = "Ahora necesito de la dirección del agresor*";
+"title_question_age_group_victim" = "¿Cual es el grupo de edad de la víctima?";
+"title_question_ethnicity_victim" = "¿Cual es la color/etnia de la víctima?";
+"title_question_age_group_offender" = "¿Cual es el grupo de edad del agresor?";
+"title_question_ethnicity_offender" = "¿Cual es la color/etnia del agresor?";
+"title_question_gender_victim" = "¿Cual es el sexo biológico de la víctima?*";
+"title_question_sex_option_victim" = "¿Cual es la identidad sexual de la víctima?";
+"title_question_gender_offender" = "¿Cual es el sexo biológico del agressor?*";
+"title_question_sex_option_offender" = "¿Cual es la identidad sexual del agressor?";
+"title_question_theme" = "¿Su denuncia es relacionada a cual perfil?*";
+"title_question_racial_subtype" = "¿La denuncia de igualdad es acerca de que?*";
+"title_question_violence_against_women_subtype" = "¿La denuncia de Violencia Contra la Mujer es acerca de que?*";
+"title_question_internet_crime" = "¿Que se pasó?*";
+"title_question_internet_location" = "¿Donde ocurrió? (URL)*";
+
+/* Report No Accessibility */
+"hint_access_inst_address" = "Introduzca la dirección completa";
+"hint_access_inst_location_name" = "Nombre del órgano/Institución";
+"hint_access_inst_offender_type" = "Seleccione el tipo de delincuente";
+"hint_access_trans_address" = "Ruta/número de línea o de vuelo";
+"hint_access_trans_location_name" = "Nombre de transportista";
+"hint_access_violation" = "Seleccione violación";
+"hint_access_violation_desc" = "Descripción del incidente";
+"title_question_accessibility_location" = "¿Cuál es la ubicación del informe?*";
+"title_question_victim_gender_no_req" = "¿Cual es el sexo biológico de la víctima?";
+"title_question_institution_activated_required" = "¿Algún órgano fue accionado?*";
+"title_question_accessibility_violation_desc" = "Describir el incidente:*";
+"title_question_accessibility_violation" = "¿Qué tipo de violación encontrado?*";
+"title_question_accessibility_victim_name" = "¿Qué nombre de la víctima?";
+"title_question_accessibility_location_info" = "Información de ubicación:*";
+"title_access_trans_location" = "El transporte público";
+"title_access_inst_location" = "Órgano/Espacio Público";
+"hint_access_violation_type" = "Seleccione el tipo de violación";
+
+/* Result screens */
+"protocol_info" = "Ese es su protocolo, para acompañarlo llame el Disque 100 después de 15 días.";
+"protocol_info_internet" = "Este é seu protocolo, para acompañarlo visite http://new.safernet.org.br/denuncie";
+
+/* Email strings */
+"email_subject_text" = "Denuncia de accesibilidad";
+
+"email_from_text" = "nobody@mail.com.br";
+"accessibility_report_email_address" = "dielson@ilhasoft.com.br";
+"label_violation_details" = "Tipo de violación";
+"label_call" = "Llamar";
+"label_route" = "Ruta";
+"title_violation_network" = "Red de protección";
+"hint_victim_name" = "Nombre de la víctima";
+"hint_victim_location_description" = "Ej.: Encuentrase en la casa de un amigo";
+"label_violation_report" = "Denuncia de violación";
+"text_next" = "Próximo";
+"hint_offender_name" = "Nombre del agresor";
+"info_offender_name" = "Caso no sepa, informe desconocido";
+"title_person" = "Persona";
+"title_company" = "Organización/Institución";
+"hint_violation_description" = "Describa el ocurrido";
+"hint_institution_activated" = "Informe un órgano";
+"response_negative" = "No";
+"response_positive" = "Si";
+"hint_unknown_location" = "No sé";
+"hint_my_location" = "Mi local";
+"hint_address_city" = "Ciudad";
+"hint_address" = "Dirección";
+"info_victim_name" = "Si es usted, informe su nombre";
+"spinner_default_text" = "Seleccione una opción";
+"spinner_default_state_text" = "Seleccione un estado";
+"spinner_default_city_text" = "Seleccione una ciudad";
+"error_required_fields" = "Existe alguna pregunta obligatoria sin respuesta (marcada con asterisco)";
+"message_cancel_report" = "¿Tienes certeza que deseas desistir de la denuncia?";
+"option_cancel" = "Cancelar";
+"option_continue" = "Continuar";
+"option_give_up" = "Desistir";
+"message_report_protocol" = "Denuncia encaminada para el";
+"label_back_start" = "Volver al comienzo";
+"label_online_help" = "Ayuda en linea";
+"load_message_report" = "Enviando denuncia...";
+"message_report_error" = "Ocurrió un error al salvar. Intente nuevamente más tarde.";
+"hint_fill_address" = "Informar dirección";
+"hint_internet_crime_description" = "Descripción";
+"hint_website_address" = "Dirección del sítio";
+"text_report" = "Denunciar";
+"label_internet_crime" = "Crimens el la internet";
+"text_about_app" = "El Proteja Brasil es una aplicación de iPhone o teléfono móvil con sistema Android creado para facilitar denuncias y informar acerca de la violencia contra niños, niñas y adolescentes. \n\nA partir del local donde el usuario encuentrase, el Proteja Brasil indica teléfonos y direcciones y el mejor camino para llegar a comisarías de policía especializadas en infancia y juventud, consejos de protección, la justicia de infancia y organizaciones que ayudan en el combate a violencia contra la infancia y adolescencia en las principales ciudades brasileñas.";
+"label_about" = "Acerca";
+"label_opinion" = "Opine";
+"title_opinion" = "¿Dudas o sugestiones? Envíe para nosostros.";
+"hint_subject" = "Asunto";
+"hint_opinion_name" = "Nombre";
+"hint_opinion_email" = "E-mail";
+"hint_opinion_message" = "Mensage";
+"text_send" = "Enviar";
+"title_send_opinion_email" = "Enviar email...";
+"message_error_send_opinion" = "No existen clientes de email instalados en su dispositivo móbil. ¡No fué posible enviar su sugestión!";
+"load_message_network" = "Buscando redes de protección...";
+"title_networks_found" = "Redes encontradas:";
+"error_message_networks_not_found" = "No fué encontrada ninguna red de protección con ese nombre";
+"label_open_today" = "Abierto hoy";
+"label_closed_today" = "Cerrado hoy";
+"receiver_email_opinion" = "contato@protejabrasil.com.br";
+"error_location_disabled" = "¡Habilite su localización para efectuar esa acción!";
+"error_message_location_disabled" = "No fué posible obtener la red de protección más cerca de usted. Verifique la permisión de su GPS.";
+"error_message_network_not_found" = "No fué posible encontrar red de protección para atender ese tipo de violación.";
+"hint_search_violation_type" = "Buscar redes de violación";
+"prompt_call_permission_error" = "¡No será posible efectuar esa llamada sin permiso!";
+"label_contact" = "Contacto";
+"label_internet_help" = "Ayuda y guía";
+"label_criticism" = "Crítica";
+"label_compliment" = "Elogio";
+"error_message_feedback" = "¡Ocurrió un error al enviar su feedback, verifique su conexión con la internet!";
+"prompt_success_message_feedback" = "Vamos evaluar su mensage y en breve, usted recibirá una respuesta.";
+"error_message_type_invalid" = "¡Escoja acerca de lo que es su opinión en las opciones arriba!";
+"label_inform" = "Informar";
+"label_doubt" = "Duda";
+"label_suggestion" = "Sugestión";
+"label_unknown" = "No sé";
+"title_gender_help" = "¿Duda? ¡Nosotros explicamos!";
+"message_gender_help" = "Sexo biológico:\n\nEs su genital y cromosoma cuando usted vino al mundo.\n\nIdentidad sexual:\n\nIdentidad sexual de una persona indica los géneros que ella/él se siente atraída física, romántica y/o emocionalmente.";
+"label_help_button" = "OK, ¡entendí!";
+"error_message_my_location" = "No fué posible encontrar su dirección, escoja informar manualmente";
+"disk_100" = "Disque 100";
+"prompt_evaluate_google_play" = "Evalúe en Google Play";
+"error_message_violation_empty" = "Ninguna violación encontrada para ese tema";
+"label_required_field" = "*campo obligatorio";
+
+/* Feedback */
+"prompt_evaluate_app_store" = "Valorar la App Store";
+
+/* Texts */
+
+"text_about_safernet" = "SaferNet Brasil ofrece servicio de ayuda contra los crímenes y violaciónes de los derechos humanos en Internet con procedimientos eficaces y transparentes para soluciones de reenvío. Te sirven por un psicólogo, con respeto, el anonimato, y el estricto secreto sobre todo lo que se dijo.";
+"text_telephone" = "Teléfono";
+// Texto que mostra na tela de detalhe do tipo de violação quando não encontra uma rede próxima
+// (Menu -> Lista de temas -> Tipo de violação -> detalhe)
+"text_no_nearest_net" = "No se pudo obtener la red de seguridad más cercano. Compruebe el permiso de su GPS.";
+"text_no_protection_network" = "No se pudo encontrar la red de protección para satisfacer esta violación.";
+// Texto que mostra na tela de "Denúncia registrada" para
+// crime da internet e local sem acessibilidade (não possuem protocolo)
+"text_report_registered" = "Queja registrado correctamente";
+"text_protect_report" = "Proteja e Denuncie";
+
+/* Buttons */
+"button_report_in_app" = "Informe de la aplicación";

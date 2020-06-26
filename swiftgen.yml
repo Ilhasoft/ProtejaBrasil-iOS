@@ -1,0 +1,4 @@
+strings:
+  paths: Proteja Brasil/Resources/en.lproj/Localizable.strings
+  templateName: structured-swift3
+  output: Proteja Brasil/Classes/Generated/Strings.generated.swift

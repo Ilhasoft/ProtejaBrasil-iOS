@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PBComplaintFinishedViewController" customModule="Proteja_Brasil" customModuleProvider="target">
+            <connections>
+                <outlet property="btOnlineHelp" destination="UMf-ea-0Gb" id="cSG-KT-mfT"/>
+                <outlet property="btbackToHome" destination="GRY-0E-dDG" id="KgC-YX-H1E"/>
+                <outlet property="constraintViewCenterHeight" destination="1c7-x3-dB4" id="tnu-6i-JqM"/>
+                <outlet property="imageView" destination="Vzq-78-fLi" id="t2H-gc-YeI"/>
+                <outlet property="lbDisk100" destination="So2-pI-kG3" id="3uI-pp-iO3"/>
+                <outlet property="lbFInished" destination="JeH-Lt-BDD" id="EBT-cD-o9d"/>
+                <outlet property="lbMessage" destination="Fug-Id-AqB" id="4Do-ya-mrm"/>
+                <outlet property="lbProtocol" destination="HlW-0f-KsS" id="EWb-42-V79"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vm-xa-VU9">
+                    <rect key="frame" x="42" y="216" width="291" height="380"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRY-0E-dDG">
+                            <rect key="frame" x="52.666666666666686" y="342" width="186" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="186" id="7Zn-MV-jP0"/>
+                                <constraint firstAttribute="height" constant="30" id="HGL-x6-GbU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="Voltar para o início">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backToHome" destination="-1" eventType="touchUpInside" id="M3C-7x-5bg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Denúncia encaminhada para" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeH-Lt-BDD">
+                            <rect key="frame" x="8" y="143" width="274" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgDenounceRegistred_pt" translatesAutoresizingMaskIntoConstraints="NO" id="Vzq-78-fLi">
+                            <rect key="frame" x="31" y="20" width="228" height="105"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disque 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So2-pI-kG3">
+                            <rect key="frame" x="94" y="167" width="103" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235294117647" green="0.37254901960784315" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HlW-0f-KsS">
+                            <rect key="frame" x="8" y="223" width="274" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.81176470590000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Este é o seu protocolo. Para acompanhar ligue no Disque 100 após 15 dias" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fug-Id-AqB">
+                            <rect key="frame" x="8" y="265" width="274" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-ea-0Gb">
+                            <rect key="frame" x="8.6666666666666572" y="284" width="274" height="50"/>
+                            <color key="backgroundColor" red="0.10980392156862745" green="0.48627450980392156" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="274" id="6wQ-Wy-aXO"/>
+                                <constraint firstAttribute="height" constant="50" id="OLo-hO-lGV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="Ajuda Online">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onlineHelp" destination="-1" eventType="touchUpInside" id="IS5-1G-kOs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="GRY-0E-dDG" secondAttribute="bottom" constant="8" id="0kD-sI-gZ3"/>
+                        <constraint firstAttribute="height" constant="380" id="1c7-x3-dB4"/>
+                        <constraint firstItem="UMf-ea-0Gb" firstAttribute="centerX" secondItem="9vm-xa-VU9" secondAttribute="centerX" id="KnJ-9O-klQ"/>
+                        <constraint firstItem="GRY-0E-dDG" firstAttribute="top" secondItem="UMf-ea-0Gb" secondAttribute="bottom" constant="8" id="OJd-qi-e9O"/>
+                        <constraint firstItem="GRY-0E-dDG" firstAttribute="centerX" secondItem="9vm-xa-VU9" secondAttribute="centerX" id="ffP-qM-nyq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.062745098039215685" green="0.77647058823529413" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9vm-xa-VU9" firstAttribute="leading" secondItem="pJV-o5-F0V" secondAttribute="leading" constant="42" id="HYQ-GB-ba4"/>
+                <constraint firstItem="9vm-xa-VU9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xwi-cG-pBN"/>
+                <constraint firstItem="9vm-xa-VU9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YPu-hg-ujZ"/>
+                <constraint firstItem="pJV-o5-F0V" firstAttribute="trailing" secondItem="9vm-xa-VU9" secondAttribute="trailing" constant="42" id="vmA-7E-jDR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="pJV-o5-F0V"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgDenounceRegistred_pt" width="222" height="118"/>
+    </resources>
+</document>

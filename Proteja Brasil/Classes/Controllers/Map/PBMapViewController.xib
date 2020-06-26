@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PBMapViewController" customModule="Proteja_Brasil" customModuleProvider="target">
+            <connections>
+                <outlet property="btDropDown" destination="epB-gg-Cky" id="0gH-lW-7cU"/>
+                <outlet property="constraintTableDropDownHeight" destination="Px5-Uv-qkE" id="v6l-za-UcP"/>
+                <outlet property="lbProtectAndReport" destination="3mm-ex-yFh" id="Vb5-vu-v11"/>
+                <outlet property="map" destination="a7W-4p-UH7" id="0aU-RJ-gPf"/>
+                <outlet property="tableDropDown" destination="BDW-5h-6eC" id="fFH-1f-Sit"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a7W-4p-UH7">
+                    <rect key="frame" x="0.0" y="110" width="375" height="702"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="gPo-Cq-1h5"/>
+                    </connections>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-5h-6eC">
+                    <rect key="frame" x="0.0" y="88" width="375" height="46"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Px5-Uv-qkE"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1MP-Kd-lk9"/>
+                        <outlet property="delegate" destination="-1" id="LJy-Xj-bOz"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epB-gg-Cky">
+                    <rect key="frame" x="329" y="64" width="46" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="8Zq-IU-INj"/>
+                        <constraint firstAttribute="width" constant="46" id="r2T-dP-oVm"/>
+                    </constraints>
+                    <state key="normal" image="imgSetaBusca"/>
+                    <connections>
+                        <action selector="showStates" destination="-1" eventType="touchUpInside" id="kR1-m1-UIS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proteja e Denuncie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mm-ex-yFh">
+                    <rect key="frame" x="112.66666666666669" y="754" width="150" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="WRa-J9-Thv"/>
+                        <constraint firstAttribute="height" constant="30" id="y2j-i4-VXA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyQ-T5-azW" userLabel="My Location Button">
+                    <rect key="frame" x="24" y="750" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Nke-of-DTU"/>
+                        <constraint firstAttribute="width" constant="38" id="Wsy-LQ-Eh6"/>
+                    </constraints>
+                    <state key="normal" image="imgMeuLocal"/>
+                    <connections>
+                        <action selector="showUserLocation" destination="-1" eventType="touchUpInside" id="Ks1-9p-kCT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BDW-5h-6eC" firstAttribute="top" secondItem="HIS-9k-aRI" secondAttribute="top" id="6gK-q5-JyO"/>
+                <constraint firstItem="3mm-ex-yFh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Pb-j3-2Gg"/>
+                <constraint firstItem="a7W-4p-UH7" firstAttribute="top" secondItem="epB-gg-Cky" secondAttribute="bottom" id="Hjs-vj-PvB"/>
+                <constraint firstAttribute="trailing" secondItem="epB-gg-Cky" secondAttribute="trailing" id="OMF-rt-p3r"/>
+                <constraint firstItem="xyQ-T5-azW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="P2S-Tz-e7y"/>
+                <constraint firstItem="a7W-4p-UH7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="UVs-Vx-7cl"/>
+                <constraint firstAttribute="trailing" secondItem="a7W-4p-UH7" secondAttribute="trailing" id="V1p-Vg-opq"/>
+                <constraint firstAttribute="trailing" secondItem="BDW-5h-6eC" secondAttribute="trailing" id="aT5-Ry-Zi4"/>
+                <constraint firstAttribute="bottom" secondItem="xyQ-T5-azW" secondAttribute="bottom" constant="24" id="bUM-fh-pUN"/>
+                <constraint firstAttribute="bottom" secondItem="a7W-4p-UH7" secondAttribute="bottom" id="gvc-bO-wIc"/>
+                <constraint firstAttribute="bottom" secondItem="3mm-ex-yFh" secondAttribute="bottom" constant="28" id="hDy-oD-xT2"/>
+                <constraint firstItem="BDW-5h-6eC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jHT-el-bAv"/>
+                <constraint firstItem="a7W-4p-UH7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sEn-5H-WC7"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="HIS-9k-aRI"/>
+            <point key="canvasLocation" x="337" y="371"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgMeuLocal" width="38" height="38"/>
+        <image name="imgSetaBusca" width="12" height="6"/>
+    </resources>
+</document>

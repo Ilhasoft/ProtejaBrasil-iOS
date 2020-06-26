@@ -1,0 +1,129 @@
+/* 
+  Report.strings
+  Proteja Brasil
+
+  Created by Daniel Borges on 14/03/16.
+  Copyright © 2016 IlhaSoft. All rights reserved.
+*/
+
+"select_an_option" = "Selecione uma opção";
+
+"racial_subtype1" = "Comunidades Quilombolas";
+"racial_subtype2" = "Comunidades de Matriz Africana";
+"racial_subtype3" = "Comunidades de Etnia Cigana";
+"racial_subtype4" = "Mulher Negra";
+"racial_subtype5" = "Juventudade Negra";
+"racial_subtype6" = "População Negra em Geral";
+
+"domestic_and_familiar_violence" = "Violência doméstica e familiar";
+"intimidation" = "Ameaça";
+"feminicide" = "Feminicídio";
+"women_trade" = "Tráfico de mulheres";
+"false_imprisonment" = "Cárcere privado";
+"violence_against_religious_diversity" = "Violência contra diversidade religiosa";
+"violence_on_sports" = "Violência no esporte";
+"homicide" = "Homicídio";
+"institutional_violence" = "Violência institucional";
+"physical_violence" = "Violência física";
+"moral_violence" = "Violência moral";
+"police_violence" = "Viol^ncia policial";
+"obstetrical_violence" = "Violência obstrética";
+"sexual_violence" = "Violência sexual";
+"virtual_violence" = "Violência virtual";
+"slave_work" = "Trabalho escravo";
+"other_entries" = "Outros registros";
+
+"place1" = "Casa";
+"place2" = "Rua";
+"place3" = "Local de trabalho";
+"place4" = "Ônibus";
+"place5" = "Outros";
+"place13" = "Escola";
+"place14" = "Unidade Prisional - Presídio";
+"place15" = "Albergue";
+"place16" = "Instituição de Longa Permanência para Idosos - ILPI";
+"place17" = "Igreja";
+"place18" = "Delegacia de Polícia";
+"place19" = "Delegacia de Polícia como Unidade Prisional";
+"place20" = "Unidade Prisional - Cadeia Pública";
+"place21" = "Unidade de Medida Sócio Educativa";
+"place22" = "Medida de Segurança - Manicômio Judicial";
+"place23" = "Manicômio/Hospital Psiquiátrico/Casa de Saúde";
+"place24" = "Casa do Suspeito";
+"place25" = "Casa da Vítima";
+"place26" = "Hospital";
+"place27" = "Unidade Prisional - Presídio";
+
+"frequency8" = "Única vez";
+"frequency1" = "Diariamente";
+"frequency3" = "Toda manhã";
+"frequency4" = "Toda tarde";
+"frequency2" = "Semanalmente";
+"frequency9" = "Quinzenalmente";
+"frequency7" = "Mensalmente";
+"frequency10" = "Ocasionalmente";
+"frequency5" = "Não informado";
+
+"age_group0" = "Não informado";
+"age_group1" = "Nascituro";
+"age_group2" = "Recém-nascido";
+"age_group_format1" = "%d a %d anos";
+"age_group_format2" = "%d anos ou mais";
+
+"ethnicity3" = "Amarela";
+"ethnicity1" = "Branca";
+"ethnicity5" = "Indígena";
+"ethnicity6" = "Não informado";
+"ethnicity4" = "Parda";
+"ethnicity2" = "Preta";
+
+"sex1" = "Masculino";
+"sex2" = "Feminino";
+"sex3" = "Não informado";
+
+"sex_option1" = "Homossexual";
+"sex_option9" = "Heterossexual";
+"sex_option3" = "Não informado";
+"sex_option8" = "Bissexual";
+
+
+"internet_option_1" = "Violência ou discriminação contra Mulheres";
+"internet_option_2" = "Homofobia";
+"internet_option_3" = "Xenofobia";
+"internet_option_4" = "Intolerância religiosa";
+"internet_option_5" = "Pornografia infantil";
+"internet_option_6" = "Racismo";
+"internet_option_7" = "Apologia e Incitação a crimes contra a Vida";
+"internet_option_8" = "Neo Nazismo";
+"internet_option_9" = "Tráfico de Pessoas";
+
+"institution_type1" = "Órgão da Administração Federal";
+"institution_type2" = "Órgão da Administração Estadual";
+"institution_type3" = "Órgão da Administração Municipal";
+
+"transport_type1" = "Transporte Coletivo Rodoviário";
+"transport_type2" = "Transporte Coletivo Metroviário";
+"transport_type3" = "Transporte Coletivo Aquaviário";
+"transport_type4" = "Transporte Coletivo Aéreo";
+
+"access_violation_type1" = "Falta de acessibilidade ao meio físico (Edificações ou Veículos)";
+"access_violation_type2" = "Falta de acessibilidade/meios de informações e comunicações";
+"access_violation_type3" = "Outra falta de acessibilidade";
+
+"access_violation140" = "Calçada não acessível (desníveis, buracos, postes, árvores, etc.)";
+"access_violation141" = "Ausência de vagas específicas no estacionamento";
+"access_violation142" = "Falta de rampas de acesso, rampas íngremes ou sem corrimão adequado";
+"access_violation143" = "Portas de acesso livres de barreiras (catracas, trilhos não embutidos, largura adequada, etc.)";
+"access_violation144" = "Ausência ou inoperância de elevador acessível ou plataforma elevatória";
+"access_violation146" = "Ausência de piso tátil";
+"access_violation147" = "Ausência de placas informativas em braile e demais sinalizações com os símbolos internacionais";
+"access_violation148" = "Ausência de sanitário acessível";
+"access_violation149" = "Ausência de assentos preferenciais ou espaços para cadeira de rodas";
+"access_violation150" = "Ausência de apoio para o embarque e desembarque";
+"access_violation151" = "Unidade habitacional de programa público entregue sem acessibilidade";
+"access_violation152" = "Ausência ou inadequação de táxis acessíveis";
+"access_violation153" = "Ausência de meios de comunicação e informação acessíveis (como a falta de tradutor/intérprete de Libras em eventos e a falta de publicações ou impressos em braile ou outro formato acessível)";
+"access_violation154" = "Acesso negado para pessoa usuária de cão-guia";
+"access_violation155" = "Sítio ou portal da internet não acessível";
+"access_violation145" = "Ausência de balcão de atendimento ou de informação acessível para o atendimento";
+"access_violation156" = "OUTROS";

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PBTextViewComplaintElement" customModule="Proteja_Brasil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-x0-v1w">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="36"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvA-Tj-5eS" customClass="RSKGrowingTextView" customModule="RSKGrowingTextView">
+                            <rect key="frame" x="15" y="1" width="570" height="34"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minimumNumberOfLines">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maximumNumberOfLines">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" red="0.73333333329999995" green="0.72941176470000002" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="BvA-Tj-5eS" firstAttribute="top" secondItem="oSA-x0-v1w" secondAttribute="top" constant="1" id="Enb-KK-sMj"/>
+                        <constraint firstItem="BvA-Tj-5eS" firstAttribute="leading" secondItem="oSA-x0-v1w" secondAttribute="leading" constant="15" id="R7p-mK-AUL"/>
+                        <constraint firstAttribute="bottom" secondItem="BvA-Tj-5eS" secondAttribute="bottom" constant="1" id="Wv8-4C-d6M"/>
+                        <constraint firstAttribute="trailing" secondItem="BvA-Tj-5eS" secondAttribute="trailing" constant="15" id="Z7h-Xo-Bln"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="zZa-Q7-o57"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oSA-x0-v1w" secondAttribute="trailing" id="2hs-BM-akV"/>
+                <constraint firstAttribute="bottom" secondItem="oSA-x0-v1w" secondAttribute="bottom" id="KHx-N8-2GF"/>
+                <constraint firstItem="oSA-x0-v1w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UIN-el-dbg"/>
+                <constraint firstItem="oSA-x0-v1w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tQm-W7-rmc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="CY4-AB-ILi"/>
+            <connections>
+                <outlet property="textView" destination="BvA-Tj-5eS" id="qTR-eg-Eta"/>
+                <outlet property="viewRounded" destination="oSA-x0-v1w" id="3NH-gL-CGj"/>
+            </connections>
+        </view>
+    </objects>
+</document>

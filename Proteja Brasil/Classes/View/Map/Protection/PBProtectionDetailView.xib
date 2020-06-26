@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PBProtectionDetailView" customModule="Proteja_Brasil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCr-k6-P2l">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="167"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ur2-bW-mXP" customClass="PBLabel" customModule="Proteja_Brasil" customModuleProvider="target">
+                            <rect key="frame" x="17" y="43" width="566" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="uqD-W7-i82"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-jv-Bn0" customClass="PBLabel" customModule="Proteja_Brasil" customModuleProvider="target">
+                            <rect key="frame" x="17" y="91" width="566" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="u33-OT-6Xa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.3137838723776224" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-Gi-wz8" customClass="PBLabel" customModule="Proteja_Brasil" customModuleProvider="target">
+                            <rect key="frame" x="17" y="9" width="566" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Cie-LP-hKd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15g-x9-K2P">
+                            <rect key="frame" x="200" y="117" width="200" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="2iS-cX-lwW"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Rota" image="imgRota">
+                                <color key="titleColor" red="0.71764705882352942" green="0.14901960784313725" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="traceRoute" destination="iN0-l3-epB" eventType="touchUpInside" id="sNZ-IY-h4U"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qU-GD-NR1">
+                            <rect key="frame" x="0.0" y="117" width="200" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="tH1-tn-zos"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Ligar" image="imgCall">
+                                <color key="titleColor" red="0.19215686274509802" green="0.83137254901960778" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="call" destination="iN0-l3-epB" eventType="touchUpInside" id="Y0g-kV-e4j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pex-go-la6">
+                            <rect key="frame" x="400" y="117" width="200" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="ydf-8X-gTj"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Contato" image="imgContatct">
+                                <color key="titleColor" red="0.0" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showContact" destination="iN0-l3-epB" eventType="touchUpInside" id="qgP-PB-Run"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="15g-x9-K2P" firstAttribute="top" secondItem="BKi-jv-Bn0" secondAttribute="bottom" constant="8" id="0B6-az-wXL"/>
+                        <constraint firstItem="15g-x9-K2P" firstAttribute="leading" secondItem="9qU-GD-NR1" secondAttribute="trailing" id="1jZ-IY-7sE"/>
+                        <constraint firstAttribute="trailing" secondItem="ur2-bW-mXP" secondAttribute="trailing" constant="17" id="5fx-WC-giY"/>
+                        <constraint firstItem="pex-go-la6" firstAttribute="leading" secondItem="15g-x9-K2P" secondAttribute="trailing" id="5qW-fX-jjs"/>
+                        <constraint firstItem="dfJ-Gi-wz8" firstAttribute="top" secondItem="DCr-k6-P2l" secondAttribute="top" constant="9" id="8Yl-Vg-1RU"/>
+                        <constraint firstItem="ur2-bW-mXP" firstAttribute="leading" secondItem="DCr-k6-P2l" secondAttribute="leading" constant="17" id="N1X-aq-36J"/>
+                        <constraint firstItem="9qU-GD-NR1" firstAttribute="top" secondItem="BKi-jv-Bn0" secondAttribute="bottom" constant="8" id="Neb-pc-wBQ"/>
+                        <constraint firstAttribute="trailing" secondItem="dfJ-Gi-wz8" secondAttribute="trailing" constant="17" id="NsX-YB-EIJ"/>
+                        <constraint firstAttribute="trailing" secondItem="pex-go-la6" secondAttribute="trailing" id="Pds-D2-3Kj"/>
+                        <constraint firstAttribute="height" constant="167" id="Qrh-iB-wWO"/>
+                        <constraint firstItem="BKi-jv-Bn0" firstAttribute="leading" secondItem="DCr-k6-P2l" secondAttribute="leading" constant="17" id="VQs-J5-OfG"/>
+                        <constraint firstItem="pex-go-la6" firstAttribute="width" secondItem="9qU-GD-NR1" secondAttribute="width" id="YLp-wE-dAN"/>
+                        <constraint firstAttribute="trailing" secondItem="BKi-jv-Bn0" secondAttribute="trailing" constant="17" id="Yp4-t9-v6o"/>
+                        <constraint firstItem="ur2-bW-mXP" firstAttribute="top" secondItem="dfJ-Gi-wz8" secondAttribute="bottom" constant="4" id="d4G-Na-aH9"/>
+                        <constraint firstAttribute="trailing" secondItem="15g-x9-K2P" secondAttribute="trailing" id="ggL-xF-umU"/>
+                        <constraint firstItem="dfJ-Gi-wz8" firstAttribute="leading" secondItem="DCr-k6-P2l" secondAttribute="leading" constant="17" id="ijU-Wj-qwJ"/>
+                        <constraint firstItem="pex-go-la6" firstAttribute="top" secondItem="BKi-jv-Bn0" secondAttribute="bottom" constant="8" id="isw-gQ-c0E"/>
+                        <constraint firstItem="15g-x9-K2P" firstAttribute="width" secondItem="9qU-GD-NR1" secondAttribute="width" id="t3U-TJ-YFN"/>
+                        <constraint firstItem="9qU-GD-NR1" firstAttribute="leading" secondItem="DCr-k6-P2l" secondAttribute="leading" id="vNt-dL-tVZ"/>
+                        <constraint firstItem="BKi-jv-Bn0" firstAttribute="top" secondItem="ur2-bW-mXP" secondAttribute="bottom" constant="6" id="vZQ-xl-xs1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ggL-xF-umU"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DCr-k6-P2l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4dn-j2-Ss8"/>
+                <constraint firstItem="DCr-k6-P2l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t17-O4-krp"/>
+                <constraint firstAttribute="trailing" secondItem="DCr-k6-P2l" secondAttribute="trailing" id="uwZ-QP-77l"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="17" left="17" bottom="0.0" right="17"/>
+            <viewLayoutGuide key="safeArea" id="yHG-U4-wuw"/>
+            <connections>
+                <outlet property="btCall" destination="9qU-GD-NR1" id="6ZH-Qi-toe"/>
+                <outlet property="btContact" destination="pex-go-la6" id="hPc-qH-zAD"/>
+                <outlet property="btRoute" destination="15g-x9-K2P" id="nm2-he-i3l"/>
+                <outlet property="lbAdress" destination="ur2-bW-mXP" id="9pY-a8-ANA"/>
+                <outlet property="lbOperatingDays" destination="BKi-jv-Bn0" id="qr4-zb-oIx"/>
+                <outlet property="lbTitle" destination="dfJ-Gi-wz8" id="qfB-bX-GT0"/>
+            </connections>
+            <point key="canvasLocation" x="500" y="351"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgCall" width="15" height="15"/>
+        <image name="imgContatct" width="11" height="17"/>
+        <image name="imgRota" width="16" height="14"/>
+    </resources>
+</document>

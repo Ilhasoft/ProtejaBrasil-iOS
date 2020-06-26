@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PBThemeSelectorTableViewCell" customModule="Proteja_Brasil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="44.666666666666664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3u-c7-Ien">
+                        <rect key="frame" x="15" y="12.000000000000002" width="542" height="20.666666666666671"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bc-q2-Fis">
+                        <rect key="frame" x="565" y="12.333333333333336" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1hR-YL-wU7"/>
+                            <constraint firstAttribute="width" constant="20" id="UmG-n3-Osn"/>
+                        </constraints>
+                        <state key="normal" image="ic_check_inactive"/>
+                        <state key="selected" image="ic_check_active"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyu-LJ-G5k">
+                        <rect key="frame" x="15" y="43.666666666666664" width="585" height="1"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9bd-2l-QbE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3bc-q2-Fis" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GNH-w9-PHc"/>
+                    <constraint firstItem="l3u-c7-Ien" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="SKN-rr-sYb"/>
+                    <constraint firstAttribute="bottom" secondItem="Pyu-LJ-G5k" secondAttribute="bottom" id="hjf-kR-mhm"/>
+                    <constraint firstAttribute="bottom" secondItem="l3u-c7-Ien" secondAttribute="bottom" constant="12" id="jSD-at-BQN"/>
+                    <constraint firstItem="Pyu-LJ-G5k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="osE-5k-Jvh"/>
+                    <constraint firstItem="3bc-q2-Fis" firstAttribute="leading" secondItem="l3u-c7-Ien" secondAttribute="trailing" constant="8" id="rOU-kJ-mNw"/>
+                    <constraint firstAttribute="trailing" secondItem="3bc-q2-Fis" secondAttribute="trailing" constant="15" id="tmT-7k-lYG"/>
+                    <constraint firstAttribute="trailing" secondItem="Pyu-LJ-G5k" secondAttribute="trailing" id="xpR-J1-0aD"/>
+                    <constraint firstItem="l3u-c7-Ien" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="zpZ-vd-2VR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="SOd-TT-zrh"/>
+            <connections>
+                <outlet property="btSelect" destination="3bc-q2-Fis" id="8d1-mZ-QFM"/>
+                <outlet property="lbTitle" destination="l3u-c7-Ien" id="zPg-GN-xpo"/>
+                <outlet property="viewLine" destination="Pyu-LJ-G5k" id="ZuZ-DT-YPa"/>
+            </connections>
+            <point key="canvasLocation" x="395" y="376.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_check_active" width="20" height="20"/>
+        <image name="ic_check_inactive" width="20" height="20"/>
+    </resources>
+</document>

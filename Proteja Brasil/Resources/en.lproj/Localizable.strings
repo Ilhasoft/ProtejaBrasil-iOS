@@ -1,0 +1,197 @@
+"app_name" = "Protect Brazil";
+"action_map" = "Map";
+"action_reports" = "My denounces";
+"action_violation_types" = "Violation types";
+"action_opinion" = "Give your opinion";
+"action_about" = "About";
+"label_close_menu" = "Close Menu";
+"label_open_menu" = "Open Menu";
+"menu_report" = "Report";
+
+/* Common ones */
+"ok" = "OK";
+
+/* Errors */
+"error" = "Erro";
+"error_unexpected" = "An unexpected error occurred. Please try again.";
+"error_from_server" = "Has occurred an error while loading data from the server. Please try again.";
+"error_invalid_url" = "Has occurred an error while saving. Make sure the website address is correct (E.g.: http://www.google.com.br).";
+
+/* Alerts */
+"alert_fill_all_fields" = "Please, fill all fields";
+"alert_allow_location" = "Allow application to access your location in the device settings.";
+"alert_disk_100" = "You want to call to Disk 100?";
+"alert_disk_180" = "Call 180!";
+
+/* Hints */
+"hint_search_networks" = "Search for protection nets";
+
+"hint_search_places" = "Search for location";
+"hint_accessibility_barrier" = "Describe";
+
+/* Floating button texts */
+"label_report_call" = "Denounce through Disk 100";
+"label_report_call_180" = "Denounce through Call 180";
+"label_accessibility" = "Location without accessibility";
+"label_internet_crim" = "Violation on the internet";
+"label_report" = "Violation off the internet";
+
+/* Activity titles */
+"title_activity_maps" = "Map";
+
+"title_activity_accessibility_report" = "Location without accessibility";
+
+/* Report questions */
+"title_question_victim_info" = "Name of the victim:*";
+
+"title_question_victim_location_description" = "Where can the victim be found?*";
+"title_question_offender_info" = "Who is the offender?*";
+"title_question_place_violation" = "Where did the violation happen?*";
+"title_question_violation_time" = "For how long does this happen?*";
+"title_question_barriers" = "Which barriers do you find on this location*";
+"title_question_violation_type" = "Which type of violation occurred?*";
+"title_question_violation_description" = "How is the violence executed?*";
+"title_question_institution_activated" = "Was any council contacted?*";
+"title_question_victim_location" = "Almost there! What is the victim\'s address?*";
+"title_question_offender_location" = "Now, I need the offender\'s address*";
+"title_question_age_group_victim" = "How old is the victim?";
+"title_question_ethnicity_victim" = "What is the race/ethnicity of the victim?";
+"title_question_age_group_offender" = "How old is the offender?";
+"title_question_ethnicity_offender" = "What is the race/ethnicity of the offender?";
+"title_question_gender_victim" = "What is the biological sex of the victim?*";
+"title_question_sex_option_victim" = "What is the sexual identity of the victim?";
+"title_question_gender_offender" = "What is the biological sex of the offender?*";
+"title_question_sex_option_offender" = "What is the sexual identity of the offender?";
+"title_question_theme" = "Your denounce is related to which profile?*";
+"title_question_racial_subtype" = "What\'s the racial equality denounce about?*";
+"title_question_violence_against_women_subtype" = "What\'s the Violence Against Women denounce about?*";
+"title_question_internet_crime" = "What happened?*";
+"title_question_internet_location" = "Where it occurred? (URL)*";
+
+/* Report No Accessibility */
+"hint_access_inst_address" = "Enter the full address";
+"hint_access_inst_location_name" = "Name of organ/Institution";
+"hint_access_inst_offender_type" = "Select the offender type";
+"hint_access_trans_address" = "Route/line number or flight";
+"hint_access_trans_location_name" = "Name of transport operator";
+"hint_access_violation" = "Select the violation";
+"hint_access_violation_desc" = "Description of the incident";
+"hint_access_violation_type" = "Select the violation type";
+"title_access_inst_location" = "Organ/Public place";
+"title_access_trans_location" = "Public transport";
+"title_question_accessibility_location" = "What\'s the location of report?*";
+"title_question_accessibility_violation_desc" = "Describe the incident:*";
+"title_question_victim_gender_no_req" = "What is the biological sex of the victim?";
+"title_question_institution_activated_required" = "Was any council contacted?*";
+"title_question_accessibility_violation" = "What\'s type of violation was found?*";
+"title_question_accessibility_victim_name" = "What\'s the victim name?";
+"title_question_accessibility_location_info" = "Location information:*";
+
+/* Result screens */
+"protocol_info" = "This is your protocol, to follow it, call Disk 100 after 15 days";
+"protocol_info_internet" = "This is your protocol, to follow it, access http://new.safernet.org.br/denuncie";
+
+/* Email strings */
+"email_subject_text" = "Accessibility denounce";
+
+"email_from_text" = "nobody@mail.com.br";
+"accessibility_report_email_address" = "dielson@ilhasoft.com.br";
+"label_violation_details" = "Violation type";
+"label_call" = "Call";
+"label_route" = "Route";
+"title_violation_network" = "Protection net";
+"hint_victim_name" = "Victim\'s name";
+"hint_victim_location_description" = "Eg.: He/She is at a friend\'s house";
+"label_violation_report" = "Violation denounce";
+"text_next" = "Next";
+"hint_offender_name" = "Offender\'s name";
+"info_offender_name" = "In case you don\'t know, report unknown";
+"title_person" = "Person";
+"title_company" = "Organization/Institution";
+"hint_violation_description" = "Describe what occurred";
+"hint_institution_activated" = "Inform a council";
+"response_negative" = "No";
+"response_positive" = "Yes";
+"hint_unknown_location" = "Don\'t know";
+"hint_my_location" = "My location";
+"hint_address_city" = "Town";
+"hint_address" = "Address";
+"info_victim_name" = "If it\'s you, inform your name";
+"spinner_default_text" = "Select an option";
+"spinner_default_state_text" = "Select a state";
+"spinner_default_city_text" = "Select a town";
+"error_required_fields" = "Is there any required question without response (marked with asterisx)?";
+"message_cancel_report" = "Are you sure you want to quit the denounce?";
+"option_cancel" = "Cancelar";
+"option_continue" = "Continue";
+"option_give_up" = "Quit";
+"message_report_protocol" = "Denounce forwarded to";
+"label_back_start" = "Back to the start";
+"label_online_help" = "Online Help";
+"load_message_report" = "Sending denounce...";
+"message_report_error" = "An error occurred when saving it. Try again later.";
+"hint_fill_address" = "Inform address";
+"hint_internet_crime_description" = "Description";
+"hint_website_address" = "Website\'s address";
+"text_report" = "Denounce";
+"label_internet_crime" = "Crimes on the internet";
+"text_about_app" = "Proteja Brasil is an app to iPhone or Android device created to facilitate the denounces and to report violence against children. \n\nA From the user\'s location, Proteja Brasil indicates telephone numbers, addresses and the best way to get into police stations specialized on children, children\'s councils and other organizations that help on the fight against children\'s violation on brazilian major cities.";
+"label_about" = "About";
+"label_opinion" = "Give your opinion";
+"title_opinion" = "Doubts or suggestions? Send to us.";
+"hint_subject" = "Subject";
+"hint_opinion_name" = "Name";
+"hint_opinion_email" = "E-mail";
+"hint_opinion_message" = "Message";
+"text_send" = "Send";
+"title_send_opinion_email" = "Send email...";
+"message_error_send_opinion" = "There are no email clients installed at your device. It wasn\'t possible to send your suggestion!";
+"load_message_network" = "Searching protection nets...";
+"title_networks_found" = "Nets founded:";
+"error_message_networks_not_found" = "Any protection net with this name was found";
+"label_open_today" = "Opened today";
+"label_closed_today" = "Closed today";
+"receiver_email_opinion" = "contato@protejabrasil.com.br";
+"error_location_disabled" = "Enable your localization to develop this action!";
+"error_message_location_disabled" = "It wasn\'t possible to find a protection net next to you. Verify your GPS permission.";
+"error_message_network_not_found" = "It wasn\'t possible to find a protection net to help on this kind of violation";
+"hint_search_violation_type" = "Search for violation nets";
+"prompt_call_permission_error" = "It won\'t be possible to make this call without permission!";
+"label_contact" = "Contact";
+"label_internet_help" = "Help and orientation";
+"label_criticism" = "Critics";
+"label_compliment" = "Compliment";
+"error_message_feedback" = "An error occurred when sendind your feedback, verify your connection with the internet!";
+"prompt_success_message_feedback" = "We will evaluate your message and soon, you will receive a response.";
+"error_message_type_invalid" = "Choose what\'s your opinion about on the options above!";
+"label_inform" = "Inform";
+"label_doubt" = "Doubt";
+"label_suggestion" = "Suggestion";
+"label_unknown" = "Don\'t know";
+"title_gender_help" = "Doubt? We explain!";
+"message_gender_help" = "Biological sex: \n\nIt\'s the genitalia and chromosomes when you came into the world. \n\nSexual Identity:\n\n Sexual identity of a person that indicates which genders he/she feels physically, romantically and/or emotionally atracted to.";
+"label_help_button" = "OK, understood!";
+"error_message_my_location" = "It wasn\'t possible to find your address, choose inform manually";
+"disk_100" = "Disk 100";
+"prompt_evaluate_google_play" = "Evaluate on Google Play";
+"error_message_violation_empty" = "Any violation was found to this theme";
+"label_required_field" = "*required field";
+
+/* Feedback */
+"prompt_evaluate_app_store" = "Evaluate on App Store";
+
+/* Texts */
+
+"text_about_safernet" = "SaferNet Brazil offers help service against crimes and human rights violations on the Internet with effective and transparent procedures for forwarding solutions. You are served by a psychologist, with respect, anonymity, and strict secrecy about everything that is said.";
+"text_telephone" = "Telephone";
+// Texto que mostra na tela de detalhe do tipo de violação quando não encontra uma rede próxima
+// (Menu -> Lista de temas -> Tipo de violação -> detalhe)
+"text_no_nearest_net" = "Could not get the nearest protection net to you. Check the permission of your GPS.";
+"text_no_protection_network" = "Unable to find protection network to meet this violation.";
+// Texto que mostra na tela de "Denúncia registrada" para
+// crime da internet e local sem acessibilidade (não possuem protocolo)
+"text_report_registered" = "Report registered successfully";
+"text_protect_report" = "Protect and Report";
+
+/* Buttons */
+"button_report_in_app" = "Report by the application";

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PBTextFieldComplaintElement" customModule="Proteja_Brasil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBK-4E-uRf">
+                    <rect key="frame" x="1" y="1" width="598" height="36"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-0v-Kua">
+                            <rect key="frame" x="18" y="0.0" width="562" height="36"/>
+                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="uoy-0v-Kua" firstAttribute="top" secondItem="LBK-4E-uRf" secondAttribute="top" id="1ig-yQ-T5e"/>
+                        <constraint firstItem="uoy-0v-Kua" firstAttribute="leading" secondItem="LBK-4E-uRf" secondAttribute="leading" constant="18" id="2vm-gK-B4n"/>
+                        <constraint firstAttribute="height" constant="36" id="Zvz-2b-zrf"/>
+                        <constraint firstAttribute="bottom" secondItem="uoy-0v-Kua" secondAttribute="bottom" id="dgH-kO-X1d"/>
+                        <constraint firstAttribute="trailing" secondItem="uoy-0v-Kua" secondAttribute="trailing" constant="18" id="vgG-Uv-rMq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LBK-4E-uRf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="7wI-mP-j1q"/>
+                <constraint firstItem="LBK-4E-uRf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="JFW-nx-bQR"/>
+                <constraint firstAttribute="bottom" secondItem="LBK-4E-uRf" secondAttribute="bottom" constant="1" id="Qtc-da-wUZ"/>
+                <constraint firstAttribute="trailing" secondItem="LBK-4E-uRf" secondAttribute="trailing" constant="1" id="pfD-gc-wph"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="aXB-rV-wtO"/>
+            <connections>
+                <outlet property="textField" destination="uoy-0v-Kua" id="tDL-WV-zMN"/>
+                <outlet property="viewRounded" destination="LBK-4E-uRf" id="HeA-E4-GMB"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="348"/>
+        </view>
+    </objects>
+</document>

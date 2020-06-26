@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PBThemeSelectorElement" customModule="Proteja_Brasil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="95J-le-0Dj">
+                    <rect key="frame" x="1" y="1" width="598" height="36"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="98Z-lL-VBm"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-3n-SMP">
+                    <rect key="frame" x="559" y="0.0" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="GX3-fK-HoQ"/>
+                        <constraint firstAttribute="height" constant="35" id="y4I-e5-SWI"/>
+                    </constraints>
+                    <state key="normal" image="imgSetaPicker"/>
+                    <connections>
+                        <action selector="btArrowTouched" destination="iN0-l3-epB" eventType="touchUpInside" id="QOv-ve-a7E"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="95J-le-0Dj" secondAttribute="trailing" constant="1" id="22t-qS-IYr"/>
+                <constraint firstItem="95J-le-0Dj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="4LG-BP-1GC"/>
+                <constraint firstItem="Otq-3n-SMP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="76O-oM-2Nj"/>
+                <constraint firstAttribute="bottom" secondItem="95J-le-0Dj" secondAttribute="bottom" constant="1" id="7Jp-wO-SY5"/>
+                <constraint firstItem="95J-le-0Dj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="gd8-cK-EsL"/>
+                <constraint firstAttribute="trailing" secondItem="Otq-3n-SMP" secondAttribute="trailing" constant="6" id="s5y-Fw-BLb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="KEM-DE-O2T"/>
+            <connections>
+                <outlet property="constraintHeight" destination="98Z-lL-VBm" id="mJW-O7-3Xx"/>
+                <outlet property="tableView" destination="95J-le-0Dj" id="ImY-k7-vOK"/>
+            </connections>
+            <point key="canvasLocation" x="114" y="268"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgSetaPicker" width="11" height="11"/>
+    </resources>
+</document>

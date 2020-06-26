@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PBAboutViewController" customModule="Proteja_Brasil" customModuleProvider="target">
+            <connections>
+                <outlet property="lbAppName" destination="gfb-w3-JgK" id="7lk-cK-kqS"/>
+                <outlet property="lbText" destination="cH6-RG-vTF" id="Zvr-zp-ybq"/>
+                <outlet property="view" destination="8SR-V0-dSy" id="DTl-8A-ryh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8SR-V0-dSy">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="698"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vu-qE-nlr">
+                    <rect key="frame" x="0.0" y="88" width="600" height="0.0"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-iF-QEM" userLabel="View Content">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="698"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proteja Brasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-w3-JgK">
+                                    <rect key="frame" x="15" y="77" width="570" height="44.333333333333343"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                    <color key="textColor" red="0.062745098040000002" green="0.77647058820000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qN-8e-OcO">
+                                    <rect key="frame" x="0.0" y="277" width="600" height="421"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_unicef" translatesAutoresizingMaskIntoConstraints="NO" id="gYj-yo-sYU">
+                                            <rect key="frame" x="174" y="25" width="240" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="HuA-PC-Pn2"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_we_protect" translatesAutoresizingMaskIntoConstraints="NO" id="B6f-14-hcK">
+                                            <rect key="frame" x="174" y="94" width="240" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="Neb-r9-n8f"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_federal" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-sO-Xz0">
+                                            <rect key="frame" x="180" y="173" width="240" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="fHb-mI-AhN"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3I-Zn-9zz">
+                                            <rect key="frame" x="0.0" y="221" width="600" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Pg4-eP-3JP"/>
+                                                <constraint firstAttribute="width" secondItem="l3I-Zn-9zz" secondAttribute="height" multiplier="6:2" id="r36-l4-5ol"/>
+                                            </constraints>
+                                            <state key="normal" title="www.protejabrasil.com.br">
+                                                <color key="titleColor" red="0.062745098040000002" green="0.77647058820000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Pg4-eP-3JP"/>
+                                                </mask>
+                                            </variation>
+                                            <connections>
+                                                <action selector="goToSite" destination="-1" eventType="touchUpInside" id="i7h-Xr-DD8"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ErV-sO-Xz0" firstAttribute="centerX" secondItem="4qN-8e-OcO" secondAttribute="centerX" id="0c0-u9-2Oa"/>
+                                        <constraint firstItem="gYj-yo-sYU" firstAttribute="centerX" secondItem="4qN-8e-OcO" secondAttribute="centerX" constant="-6" id="2c0-aU-9wz"/>
+                                        <constraint firstAttribute="trailing" secondItem="l3I-Zn-9zz" secondAttribute="trailing" id="H0o-1z-LZH"/>
+                                        <constraint firstItem="ErV-sO-Xz0" firstAttribute="top" secondItem="B6f-14-hcK" secondAttribute="bottom" constant="25" id="Ome-kF-hQq"/>
+                                        <constraint firstItem="B6f-14-hcK" firstAttribute="centerX" secondItem="4qN-8e-OcO" secondAttribute="centerX" constant="-6" id="RAG-fU-Ral"/>
+                                        <constraint firstItem="gYj-yo-sYU" firstAttribute="centerX" secondItem="4qN-8e-OcO" secondAttribute="centerX" id="Td0-lF-uZJ"/>
+                                        <constraint firstItem="B6f-14-hcK" firstAttribute="top" secondItem="gYj-yo-sYU" secondAttribute="bottom" constant="25" id="XzA-dc-joY"/>
+                                        <constraint firstItem="B6f-14-hcK" firstAttribute="top" secondItem="gYj-yo-sYU" secondAttribute="bottom" constant="25" id="boU-uY-aZf"/>
+                                        <constraint firstItem="gYj-yo-sYU" firstAttribute="top" secondItem="4qN-8e-OcO" secondAttribute="top" constant="25" id="moR-F4-BnK"/>
+                                        <constraint firstItem="ErV-sO-Xz0" firstAttribute="top" secondItem="B6f-14-hcK" secondAttribute="bottom" constant="25" id="oca-6r-DGL"/>
+                                        <constraint firstItem="l3I-Zn-9zz" firstAttribute="leading" secondItem="4qN-8e-OcO" secondAttribute="leading" id="rVI-LH-hSU"/>
+                                        <constraint firstItem="l3I-Zn-9zz" firstAttribute="top" secondItem="ErV-sO-Xz0" secondAttribute="bottom" constant="8" id="sHW-0O-dym"/>
+                                        <constraint firstAttribute="bottom" secondItem="l3I-Zn-9zz" secondAttribute="bottom" id="xdi-Bk-E3Q"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Td0-lF-uZJ"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH6-RG-vTF">
+                                    <rect key="frame" x="15" y="129.33333333333334" width="570" height="117.66666666666666"/>
+                                    <string key="text">O Proteja Brasil, versão para iPhone, foi criado para facilitar denúncias e informar sobre violência contra crianças e adolescentes.
+
+A partir do local onde o usuário está, o Proteja Brasil indica telefones e endereços e o melhor caminho para chegar a delegacias especializadas de infância e juventude, conselhos tutelares, varas da infância e organizações que ajudam a combater a violência contra a infância e adolescencia nas principais cidades brasileiras.</string>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="gfb-w3-JgK" firstAttribute="top" secondItem="Gby-iF-QEM" secondAttribute="top" constant="77" id="3tv-nZ-skD"/>
+                                <constraint firstAttribute="trailing" secondItem="gfb-w3-JgK" secondAttribute="trailing" constant="15" id="4bE-bu-5Ok"/>
+                                <constraint firstAttribute="height" constant="698" id="8Ur-ly-dgd"/>
+                                <constraint firstAttribute="trailing" secondItem="4qN-8e-OcO" secondAttribute="trailing" id="DwP-Mw-Ne2"/>
+                                <constraint firstItem="4qN-8e-OcO" firstAttribute="top" secondItem="cH6-RG-vTF" secondAttribute="bottom" constant="32" id="Jgc-tC-YrR"/>
+                                <constraint firstItem="4qN-8e-OcO" firstAttribute="top" secondItem="cH6-RG-vTF" secondAttribute="bottom" constant="30" id="L9F-5V-6Pw"/>
+                                <constraint firstAttribute="trailing" secondItem="cH6-RG-vTF" secondAttribute="trailing" constant="15" id="NRY-rD-5bc"/>
+                                <constraint firstItem="cH6-RG-vTF" firstAttribute="top" secondItem="gfb-w3-JgK" secondAttribute="bottom" constant="8" id="OXh-Dh-s8y"/>
+                                <constraint firstItem="gfb-w3-JgK" firstAttribute="leading" secondItem="Gby-iF-QEM" secondAttribute="leading" constant="15" id="RRf-Eq-F0M"/>
+                                <constraint firstAttribute="bottom" secondItem="4qN-8e-OcO" secondAttribute="bottom" id="Va4-z1-oAJ"/>
+                                <constraint firstItem="cH6-RG-vTF" firstAttribute="top" secondItem="gfb-w3-JgK" secondAttribute="bottom" constant="8" id="Xsz-ht-g2n"/>
+                                <constraint firstItem="4qN-8e-OcO" firstAttribute="leading" secondItem="Gby-iF-QEM" secondAttribute="leading" id="e3Q-1a-9yB"/>
+                                <constraint firstItem="cH6-RG-vTF" firstAttribute="leading" secondItem="Gby-iF-QEM" secondAttribute="leading" constant="15" id="l8k-hY-T7P"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Jgc-tC-YrR"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Gby-iF-QEM" secondAttribute="trailing" id="55R-pj-ikm"/>
+                        <constraint firstItem="Gby-iF-QEM" firstAttribute="top" secondItem="0vu-qE-nlr" secondAttribute="top" id="9xN-Rn-BBW"/>
+                        <constraint firstItem="Gby-iF-QEM" firstAttribute="leading" secondItem="0vu-qE-nlr" secondAttribute="leading" id="A1C-3s-Wyk"/>
+                        <constraint firstItem="Gby-iF-QEM" firstAttribute="height" secondItem="0vu-qE-nlr" secondAttribute="height" priority="750" id="B3d-EL-gM1"/>
+                        <constraint firstItem="Gby-iF-QEM" firstAttribute="width" secondItem="0vu-qE-nlr" secondAttribute="width" id="ckL-8U-HUR"/>
+                        <constraint firstAttribute="bottom" secondItem="Gby-iF-QEM" secondAttribute="bottom" id="fiH-DN-9Z7"/>
+                    </constraints>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="B3d-EL-gM1"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kge-of-xgj" firstAttribute="trailing" secondItem="0vu-qE-nlr" secondAttribute="trailing" id="8XL-qv-bLn"/>
+                <constraint firstItem="kge-of-xgj" firstAttribute="top" secondItem="0vu-qE-nlr" secondAttribute="bottom" id="ANx-UU-rS4"/>
+                <constraint firstItem="0vu-qE-nlr" firstAttribute="top" secondItem="kge-of-xgj" secondAttribute="top" id="YET-rj-21b"/>
+                <constraint firstItem="0vu-qE-nlr" firstAttribute="leading" secondItem="kge-of-xgj" secondAttribute="leading" id="iuQ-UM-bjV"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="kge-of-xgj"/>
+            <point key="canvasLocation" x="939" y="279"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_logo_federal" width="209" height="40"/>
+        <image name="img_logo_unicef" width="207" height="44"/>
+        <image name="img_logo_we_protect" width="207" height="54"/>
+    </resources>
+</document>

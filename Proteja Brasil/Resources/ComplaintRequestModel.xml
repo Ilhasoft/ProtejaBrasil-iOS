@@ -1,0 +1,50 @@
+<wsdl:operation name="cadastraDenuncia">
+    <http:operation location="/cadastraDenuncia"/>
+    
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pm="http://protejabrasil.ilhasoft.mobi">
+        <soapenv:Header></soapenv:Header>
+        <soapenv:Body>
+            <pm:cadastraDenuncia>
+                
+                <data>
+                    <canalatendimento>13</canalatendimento>
+                    
+                    <violacao>%d</violacao>
+                    <des_violacao>%@</des_violacao>
+                    <subtipoviolacao>%@</subtipoviolacao>
+                    <des_subtipoviolacao>%@</des_subtipoviolacao>
+                    
+                    <frequencia>%@</frequencia>
+                    
+                    <nome_vitima>%@</nome_vitima>
+                    <localizacao_vitima>%@</localizacao_vitima>
+                    <uf_vitima>%@</uf_vitima>
+                    <cidade_vitima>%@</cidade_vitima>
+                    <endereco_vitima>%@</endereco_vitima>
+                    
+                    <tiposuspeito>%d</tiposuspeito>
+                    <nome_suspeito>%@</nome_suspeito>
+                    <uf_suspeito>%@</uf_suspeito>
+                    <cidade_suspeito>%@</cidade_suspeito>
+                    <endereco_suspeito>%@</endereco_suspeito>
+                    
+                    <descricao>%@</descricao>
+                    <local>%@</local>
+                    
+                    <instituicao_acionada>%@</instituicao_acionada>
+                    <sexo_biologico_vitima>%@</sexo_biologico_vitima>
+                    <opcao_sexual_vitima>%@</opcao_sexual_vitima>
+                    <faixa_etaria_vitima>%@</faixa_etaria_vitima>
+                    <etnia_vitima>%@</etnia_vitima>
+                    
+                    <sexo_biologico_suspeito>%@</sexo_biologico_suspeito>
+                    <opcao_sexual_suspeito>%@</opcao_sexual_suspeito>
+                    <faixa_etaria_suspeito>%@</faixa_etaria_suspeito>
+                    <etnia_suspeito>%@</etnia_suspeito>
+                </data>
+                
+            </pm:cadastraDenuncia>
+        </soapenv:Body>
+    </soapenv:Envelope>
+    
+</wsdl:operation>
